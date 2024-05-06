@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Employee Management Dashboard</title>
+    <link rel="stylesheet" href="../style/dashboard.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="company_logo.png" alt="Company Logo">
+            <h1>Employee Management Dashboard</h1>
+        </header>
+        <div class="employee-list">
+            <h2>Employee List</h2>
+            <div class="dropdown">
+              <select class="dropdown-select">
+                <option value="" selected disabled>Select Department</option>
+                <option value="it">IT</option>
+                <option value="hr">HR</option>
+                <option value="finance">Finance</option>
+                <option value="marketing">Marketing</option>
+              </select>
+            </div>
+            <ul id="employee-data">
+            </ul>
+        </div>
+        <div class="task-management">
+            <h2>Task Management</h2>
+            <table id="task-table">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Login</th>
+                        <th>Logout</th>
+                        <th>Assigned Task</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+        <div class="ceo-view">
+            <h2>Overall Task View</h2>
+            <p>*Note:* Only CEOs can see this section</p>
+            <table id="ceo-task-table">
+                <thead>
+                    <tr>
+                        <th>Employee ID</th>
+                        <th>Assigned Task</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+                <tbody>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- <script src="script.js"></script> -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+</head>
+<body>
+</html>
